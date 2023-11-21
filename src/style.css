@@ -1,0 +1,185 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr;
+    align-items: center;
+    display: block;
+}
+
+#enemyGrid {
+
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border: 1px solid black;
+    grid-column: 4/5;
+    display: grid;
+
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr)
+}
+
+#myGrid {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    grid-column: 2 /3;
+
+
+}
+
+#myh1Grid {
+    grid-column: 2 /3;
+}
+
+#enemyh1Grid {
+    grid-column: 4/5;
+
+}
+
+.grid-item {
+    border: 1px solid black;
+    padding: auto;
+    text-align: center;
+}
+
+#creategame {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border: 1px solid black;
+    grid-column: 2/3;
+    display: grid;
+
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr)
+}
+
+#startGame {
+
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+#setupShip {
+    display: flex;
+    width: 200px;
+    height: 450px;
+    flex-direction: column;
+    border: 2px solid black;
+    grid-column: 3/4;
+}
+
+#crodsY {
+
+    width: 450px;
+    height: 45px;
+    left: 24.6%;
+    top: 22.44%;
+    position: absolute;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    /* Añadido para dar un poco de espacio entre el borde y los números */
+}
+
+#crodsY span {
+    flex: 1;
+    /* Hace que cada elemento ocupe el mismo espacio disponible */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+#crodsX {
+
+    width: 45px;
+    /* Cambiado el ancho para acomodar la disposición vertical */
+    height: 450px;
+    /* Cambiado la altura para acomodar la disposición vertical */
+    left: 22.5%;
+    top: 26.7%;
+    position: absolute;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    /* Cambiado a disposición vertical */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    /* Añadido para dar un poco de espacio entre el borde y los números */
+}
+
+#crodsX span {
+    margin-top: 2px;
+    /* Ajusta el margen superior según tus preferencias */
+}
+
+#gameover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    opacity: 0.5;
+    /* o cualquier otro valor de opacidad que desees */
+    z-index: 1;
+    /* Valor de z-index menor */
+}
+
+
+
+#restartGameBox h1 {
+    margin-top: 15%;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+
+}
+
+#restartGameBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 400px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#playAgain {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: black;
+    margin-left: 25%;
+    color: white;
+}

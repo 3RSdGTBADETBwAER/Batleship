@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="restartGameBox">
+        <h1 id="h1win">You win!!</h1>
+        <button id="playAgain">Play Again</button>
+    </div>
+    <div id="gameover"></div>
+
+    <header>Batleship</header>
+    <div id="startGame">
+        <div id="creategame"></div>
+        <div id="crodsY">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+
+        </div>
+        <div id="crodsX">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+
+        </div>
+
+
+        <div id="setupShip">
+            <label for="ShipPositionX">ShipPositionX 0-9:</label>
+            <input id="ShipPositionX" type="number" name="ShipPositionX" min="0" max="10" />
+            <label for="ShipPositionX">ShipPositionY 0-9:</label>
+            <input id="ShipPositionY" type="number" name="ShipPositionY" min="0" max="10" />
+            <input id="CordSubmit" type="submit">
+            <button id="rotationButton">Rotate</button>
+        </div>
+    </div>
+    <main id="main">
+        <h1 id="myh1Grid">MyGrid</h1>
+        <h1 id="enemyh1Grid">EnemyGrid</h1>
+        <div id="myGrid"></div>
+        <div id="enemyGrid"></div>
+    </main>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="computerGame.js"></script>
+</body>
+
+</html>
